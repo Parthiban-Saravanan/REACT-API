@@ -1,0 +1,104 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Content */
+.content {
+  flex: 2;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+/* Cart */
+.cart-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Product and Cart items */
+.product, .cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Product details */
+.product-details, .cart-item-details {
+  flex: 1;
+}
+
+.product-title, .cart-item-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.product-description {
+  margin: 10px 0;
+}
+
+/* Buttons */
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #e223b2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #360546;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Cart summary */
+.cart-summary {
+  text-align: right;
+  margin-top: 20px;
+}
